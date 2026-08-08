@@ -791,3 +791,550 @@ border:3px solid #00aaff;
         0 0 35px rgba(248, 249, 249, 0.2);
 
 }
+
+/* KANANG PARA MUGANA SA MOBILE VIEW */
+
+@media (max-width: 600px) {
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        padding-top: 110px;
+        font-size: 16px;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100px;
+        padding: 12px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        background: #000;
+        z-index: 1000;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 3px 6px;
+        padding: 2px 0;
+        font-size: 13px;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+
+    nav a::after {
+        bottom: -3px;
+        height: 2px;
+    }
+
+    #home {
+        width: 100%;
+        min-height: auto;
+        padding: 55px 18px 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content p:first-child {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.4;
+        margin: 0 0 5px;
+    }
+
+    .home-content h1 {
+        width: 100%;
+        font-size: 27px;
+        line-height: 1.25;
+        margin: 5px 0 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .typing {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        color: #00aaff;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal;
+        overflow: visible;
+        border-right: none;
+        animation: none;
+        margin: 0 auto;
+    }
+
+    .description {
+        width: 100%;
+        max-width: 350px;
+        font-size: 15px;
+        line-height: 1.65;
+        text-align: center;
+        margin: 12px auto 0;
+        overflow-wrap: break-word;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .btn {
+        width: 190px;
+        min-height: 42px;
+        margin: 0;
+        padding: 9px 18px;
+        font-size: 15px;
+    }
+
+    .social-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .social-icons a {
+        width: 43px;
+        height: 43px;
+        flex-shrink: 0;
+    }
+
+    .social-icons img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .home-images {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        flex-wrap: nowrap;
+    }
+
+    .home-images img {
+        width: 30%;
+        max-width: 100px;
+        height: 190px;
+        flex-shrink: 1;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 2px solid #00aaff;
+    }
+
+    .home-images:hover img {
+        width: 30%;
+        opacity: 1;
+    }
+
+    .home-images img:hover {
+        width: 33%;
+        max-width: 105px;
+        opacity: 1;
+        transform: translateY(-5px);
+        box-shadow:
+            0 0 10px #00aaff,
+            0 0 20px #00aaff;
+    }
+
+    #about {
+        width: 100%;
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .about-title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .about-boxes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .info-box {
+        width: 100%;
+        min-width: 0;
+        padding: 22px 8px;
+        border-radius: 14px;
+    }
+
+    .info-box .icon {
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .info-box h2 {
+        font-size: 34px;
+        line-height: 1.1;
+        margin: 7px 0;
+    }
+
+    .info-box p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .info-box:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+
+    .popup {
+        padding: 15px;
+    }
+
+    .popup-content {
+        width: 100%;
+        max-width: 360px;
+        padding: 25px 18px;
+        border-radius: 14px;
+    }
+
+    .popup h2 {
+        font-size: 22px;
+    }
+
+    .popup ul {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .popup img {
+        width: 130px;
+        max-width: 100%;
+    }
+
+    .close {
+        font-size: 26px;
+    }
+
+    .relationship button {
+        font-size: 15px;
+        padding: 10px 22px;
+    }
+
+    #activities {
+        width: 100%;
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .activities-title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .activity-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 15px;
+        margin-bottom: 18px;
+        text-align: center;
+        border-radius: 14px;
+    }
+
+    .activity-card img {
+        width: 65px;
+        height: 65px;
+        margin: 0 0 12px;
+    }
+
+    .activity-info {
+        width: 100%;
+    }
+
+    .activity-info h2 {
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+    }
+
+    .activity-info a {
+        font-size: 14px;
+        overflow-wrap: break-word;
+    }
+
+    #achievements {
+        width: 100%;
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .achievements-title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .achievement-gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .achievement-card {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .achievement-card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    #projects {
+        width: 100%;
+        min-height: auto;
+        padding: 65px 18px;
+    }
+
+    .projects-title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .project-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 290px;
+        min-width: 0;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .project-info {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .project-info h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding-top: 108px;
+    }
+
+    header {
+        padding: 10px 5px;
+        gap: 6px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 2px 4px;
+    }
+
+    #home {
+        padding: 45px 12px 35px;
+        gap: 28px;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+    }
+
+    .home-content p:first-child {
+        font-size: 17px;
+    }
+
+    .typing {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 14px;
+        max-width: 330px;
+    }
+
+    .btn {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-images {
+        gap: 5px;
+    }
+
+    .home-images img {
+        height: 170px;
+        border-radius: 13px;
+    }
+
+    #about,
+    #activities,
+    #achievements,
+    #projects {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .about-title,
+    .activities-title,
+    .achievements-title,
+    .projects-title {
+        font-size: 29px;
+    }
+
+    .about-boxes {
+        gap: 8px;
+    }
+
+    .info-box {
+        padding: 18px 5px;
+    }
+
+    .info-box .icon {
+        font-size: 26px;
+    }
+
+    .info-box h2 {
+        font-size: 30px;
+    }
+
+    .info-box p {
+        font-size: 12px;
+    }
+
+    .achievement-card {
+        max-width: 230px;
+    }
+
+    .project-card {
+        max-width: 270px;
+    }
+}
