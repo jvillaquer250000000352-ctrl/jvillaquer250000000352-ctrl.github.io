@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">BSIT <span>2A</span></h2>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#activities">Activities</a> |
+            <a href="#achievements">Achievements</a> |
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    
+    <section id="home">
+    <div class="home-content">
+        <p>HIIII I'M</p>
+
+        <h1>Janjoe Carl C. Villaquer</h1>
+
+        <h2 class="typing">
+            BSIT 2ND YEAR STUDENT
+        </h2>
+
+        <p class="description">
+            I built this portfolio to showcase my skills and projects as a BSIT student.
+            It reflects my passion for programming and learning.
+        </p>
+
+        <div class="buttons">
+            <button class="btn">Check More...</button>
+            <button class="btn">Contact Me</button>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><img src="Images/fb.jpg"></a>
+            <a href="#"><img src="Images/github.jpg"></a>
+            <a href="#"><img src="Images/tiktok.jpg"></a>
+            <a href="#"><img src="Images/email.jpg"></a>
+        </div>
+    </div>
+
+    <div class="home-images">
+        <img src="Images/pfp1.jpg">
+        <img src="Images/pfp2.jpg">
+        <img src="Images/pfp3.jpg">
+    </div>
+</section>
+
+
+    <section id="about">
+    <h1 class="about-title">About <span>Me</span></h1>
+    <div class="about-container">
+        <div class="about-text">
+            <p>
+                Hello! I'm Janjoe Carl C. Villaquer, a BSIT student with a
+                strong interest in web development and programming.
+                I enjoy turning ideas into simple and functional websites.
+                I believe every project is an opportunity to learn something
+                new, and I'm always excited to improve my skills and take on
+                new challenges.
+            </p>
+        </div>
+
+   <div class="about-boxes">
+    <button class="info-box" onclick="showPopup('hobbies')">
+    <i class="fa-solid fa-gamepad icon"></i>
+    <h2>5</h2>
+    <p>Hobbies</p>
+</button>
+
+<button class="info-box" onclick="showPopup('projects')">
+    <i class="fa-solid fa-code icon"></i>
+    <h2>1</h2>
+    <p>Projects Built</p>
+</button>
+
+<button class="info-box" onclick="showPopup('languages')">
+    <i class="fa-solid fa-language icon"></i>
+    <h2>3</h2>
+    <p>Languages</p>
+</button>
+
+<button class="info-box" onclick="showPopup('years')">
+    <i class="fa-solid fa-graduation-cap icon"></i>
+    <h2>2</h2>
+    <p>Years Learning</p>
+</button>
+</div>
+    </div>
+<div class="relationship">
+<button onclick="showPopup('taken')">
+❤️ Relationship Status ❤️
+</button>
+</div>
+</section>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2 id="popup-title"></h2>
+        <div id="popup-body"></div>
+    </div>
+
+</div>
+
+    <section id="activities">
+
+    <h1 class="activities-title">
+        My <span>Activities</span>
+    </h1>
+
+    <div class="activity-card">
+        <img src="Images/github.jpg" alt="GitHub Logo">
+        <div class="activity-info">
+
+            <h2>Fashion Blog</h2>
+            <a href="https://jvillaquer250000000352-ctrl.github.io/Activity1.1/Fashion/index.html"
+               target="_blank">
+                View Activity →
+            </a>
+        </div>
+    </div>
+
+    <div class="activity-card">
+        <img src="Images/github.jpg" alt="GitHub Logo">
+
+        <div class="activity-info">
+            <h2>Wine Festival Schedule</h2>
+            <a href="https://jvillaquer250000000352-ctrl.github.io/Activity%201.2/Wine%20Festival%20Schedule/index.html"
+               target="_blank">
+                View Activity →
+            </a>
+        </div>
+    </div>
+
+    <div class="activity-card">
+        <img src="Images/github.jpg" alt="GitHub Logo">
+
+        <div class="activity-info">
+            <h2>Davies Burger</h2>
+            <a href="https://jvillaquer250000000352-ctrl.github.io/Activity2.1/Burger/index.html"
+               target="_blank">
+                View Activity →
+            </a>
+        </div>
+    </div>
+
+</section>
+
+    <section id="achievements">
+        <h1 class="achievements-title">My <span>Achivements</span></h1>
+        <div class="achievement-gallery">
+
+        <div class="achievement-card">
+            <img src="Images/achivement1.jpg" alt="Achievement 1">
+        </div>
+
+        <div class="achievement-card">
+            <img src="Images/achivement2.jpg" alt="Achievement2">
+        </div>
+
+        <div class="achievement-card">
+            <img src="Images/achivement3.jpg" alt="Achievement3">
+        </div>
+
+    </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="projects-title">My <span>Projects</span></h1>
+
+        <div class="project-container">
+        <div class="project-card">
+
+        <div class="project-image">
+        <img src="Images/project1.png" alt="project 1">
+        </div>
+
+        <div class="project-info">
+        <h2>My Portfolio</h2>
+         <p>A simple model of portfolio for our assessment task that contains some of our informations.</p>
+         </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+const popup=document.getElementById("popup");
+const title=document.getElementById("popup-title");
+const body=document.getElementById("popup-body");
+function showPopup(type){
+popup.style.display="flex";
+
+if(type=="hobbies"){
+title.innerHTML="🎮 Hobbies";
+body.innerHTML=`
+<ul>
+<li>Playing Mobile Legends</li>
+<li>Eating Snacks</li>
+<li>Joking / Trolling</li>
+<li>Listening to Music</li>
+<li>Caring for you 💙</li>
+</ul>
+`;
+}
+
+else if(type=="projects"){
+title.innerHTML="💻 Projects Built";
+body.innerHTML=`
+<ul>
+<li>My Website Portfolio</li>
+</ul>
+`;
+}
+
+else if(type=="languages"){
+title.innerHTML="🌐 Languages";
+body.innerHTML=`
+<ul>
+<li>English</li>
+<li>Tagalog</li>
+<li>Bisaya / Cebuano</li>
+</ul>
+`;
+}
+
+else if(type=="years"){
+title.innerHTML="🎓 Years of Learning";
+body.innerHTML=`
+<ul>
+<li>2 Years learning in UIC</li>
+</ul>
+`;
+
+}
+
+else if(type=="taken"){
+title.innerHTML="❤️ Relationship Status ❤️";
+body.innerHTML=`
+<img src="Images/her.jpg">
+<h3>Taken by her 🥰❤️💖</h3
+`;
+}
+}
+
+document.querySelector(".close").onclick=function(){
+popup.style.display="none";
+}
+
+window.onclick=function(e){
+if(e.target==popup){
+popup.style.display="none";
+}
+}
+</script>
+
+</body>
+</html>
+
+
+
