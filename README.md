@@ -1,4 +1,8 @@
-# jvillaquer250000000352-ctrl.github.io
-https://jvillaquer250000000352-ctrl.github.io/Activity1.1/Fashion/index.html fashionshow
-https://jvillaquer250000000352-ctrl.github.io/Activity%201.2/Wine%20Festival%20Schedule/index.html Winetest
-https://jvillaquer250000000352-ctrl.github.io/My%20Portfolio/index.html Portfolio nako niii HEHHEEHHEHE
+#Who are you???
+I am Janjoe Carl C. Villaquer a BSIT student with a
+                strong interest in web development and programming.
+                I enjoy turning ideas into simple and functional websites.
+                I believe every project is an opportunity to learn something
+                new, and I'm always excited to improve my skills and take on
+                new challenges.
+
