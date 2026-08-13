@@ -1338,3 +1338,115 @@ border:3px solid #00aaff;
         max-width: 270px;
     }
 }
+
+/* ACHIEVEMENTS */
+#achievements {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.achievements-title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.achievements-title span {
+    color: #00aaff;
+    text-shadow:
+        0 0 5px #00aaff,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff;
+}
+
+.achievement-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.achievement-card {
+    width: 280px;
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.2);
+
+    /* Starting position */
+    opacity: 0;
+    transform: translateY(-80px);
+
+    /* Animation */
+    animation: achievementDrop 1.2s ease forwards;
+}
+
+/* Different delay for each card */
+.achievement-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.achievement-card:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.achievement-card:nth-child(3) {
+    animation-delay: 1.3s;
+}
+
+.achievement-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.achievement-description {
+    padding: 18px;
+    text-align: center;
+
+    /* Description starts above */
+    opacity: 0;
+    transform: translateY(-30px);
+
+    animation: descriptionDrop 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.achievement-description h3 {
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.achievement-description p {
+    color: white;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Achievement card drops down */
+@keyframes achievementDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Description drops down */
+@keyframes descriptionDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
